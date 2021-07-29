@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* For Box Model*/
+}
+
+/* Global design */
+body{
+    font-family: "StyleScript" , sans-serif ;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+}
+
+.button__primary{
+    background-image: linear-gradient(red,yellow);
+    color: #fff;
+    padding: 8px;
+    border: none ;
+    border-radius: 5px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__brand{
+    width: 120px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+.hero__container{
+    width: 100%;
+}
+
+.hero__image__container{
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px; 
+    }    
+    .navbar__brand{ /*for logo*/
+        width: 150px;
+    }
+    .button__primary{ /*for button*/
+        padding: 20px;
+        font-size: 20px;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center ;
+        justify-content: space-between;
+        gap: 5px;
+    }
+   }
+
+@media (min-width: 1020px) {
+    .container{
+        max-width: 1019px;
+    } 
+    .hero__image__container{
+         width: 700px;
+         height: 700px;
+     }
+}
+
+@media (min-width: 1400px) {
+     
+}
